@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cityOfAaron;
+package Model;
 import java.io.Serializable;
+import Model.Player;
 /**
  *
  * @author khaddow
@@ -14,17 +15,17 @@ import java.util.Objects;/**
  * @author khaddow
  */
 public class Game {
- private String thePlayer;
+ private Player thePlayer;
 
     public Game() {
     }
 
  
-    public String getThePlayer() {
+    public Player getThePlayer() {
         return thePlayer;
     }
 
-    public void setThePlayer(String thePlayer) {
+    public void setThePlayer(Player thePlayer) {
         this.thePlayer = thePlayer;
     }
 

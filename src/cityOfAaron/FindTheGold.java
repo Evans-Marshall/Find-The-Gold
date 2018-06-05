@@ -7,6 +7,8 @@
 * Spring 2018
 * Team members: Marshall Evanas, Kelsey Haddow */
 package cityOfAaron; 
+import View.*;
+import Model.Game;
 
 
 /**
@@ -15,11 +17,22 @@ package cityOfAaron;
  */
 public class FindTheGold {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    // variable for keeping a reference to the Game object
+    private static Game theGame= null;
+    // main function -entry point for the program
+    // runs the main menu
+    public static void main(String[] args) 
+    {
+        MainMenuView mmv = new MainMenuView();
+        mmv.displayMenuView();
     }
-    
+
+    public static Game getTheGame() {
+        return theGame;
+    }
+
+    public static void setTheGame(Game theGame) 
+    {
+        FindTheGold.theGame = theGame;
+    }   
 }
